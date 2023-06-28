@@ -1,0 +1,72 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956583/image_lsbpz6.png');
+    height: 100vh;
+    width: 100%;
+}
+.logo{
+    font-size: 35px;
+    letter-spacing: 1px;
+    color: black;
+    padding: 15px;
+}
+span{
+    color: red;
+}
+.box{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 450px;
+    height: 550px;
+    margin-top: 3%;
+    margin-left: 36%;
+}
+.box h1{
+    color: white;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+form input{
+    margin-top: 20px;
+    margin-left: 50px;
+    background-color: #333;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+}
+input::placeholder{
+    padding: 12px;
+    font-size: 17px;
+    margin-left: 15px;
+}
+input[type=email]{
+    height: 47px;
+    width: 320px;
+}
+input[type=password]{
+    height: 47px;
+    width: 320px;
+}
+input[type=submit]{
+    color: white;
+    background-color: red;
+    width: 320px;
+    height: 45px;
+    margin-top: 40px;
+}
+input[type=checkbox]{
+    height: 18px;
+    width: 25px;
+    border-radius: 5px;
+}
+label{
+    color: rgba(125,119,119);
+}

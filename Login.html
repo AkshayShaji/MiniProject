@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TelasTrack - Login</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <div class="main">
+            <h4 class="logo">Telas<span>Track</span></h4>
+            <div class="box">
+                <h1>Sign In</h1>
+                <form id="loginForm" action="login_c.php" method="POST">
+                    <input type="email" placeholder="Enter email" name="email" required>
+                    <input type="password" placeholder="Enter password" name="password" required><br>
+                    <input type="checkbox" name="userType" value="seller" required>
+                    <label>Seller</label>
+                    <input type="checkbox" name="userType" value="customer">
+                    <label>Customer</label>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
