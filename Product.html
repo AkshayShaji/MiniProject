@@ -1,0 +1,235 @@
+<html>
+    <head>
+        <title>All Products - TelasTrack</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Product.css">
+        <style>
+            .fa{
+                font-size: 30px;
+            }
+            .rating .fa{
+                color: orangered;
+            }
+            .cols-3 .fa-quote-left{
+                color: red;
+            }
+        </style>
+        <script>
+           function price()
+           {
+            var myselect=documen.getElementById('myselect');
+            var sortselect=myselect.value;
+            var productlist=document.getElementById('productlist');
+            var productitem=Array.from(productlist.getElementsByClassName('cols-2'))
+            var i,j,temp;
+            if(sortselect==sortprice)
+            {
+                for(i=0;i<productitem.length-1;i++)
+                {
+                    for(j=0;j<productitem.length-i-1;j++)
+                    {
+                        if(productitem[j].cost<productitem[j+1].cost)
+                        {
+                            productlist.insertBefore(productitem[j+1],productitem[j]);
+                        }
+                    }
+                }
+            }
+           }
+        </script>
+    </head>
+    <body bgcolor="white">
+        <div class="main">
+            <nav>
+                <h4 class="logo">Telas<span>Track</span></h4>
+                <ul>
+                    <li><a href="Index7.html">Home</a></li>
+                    <li><select class="city" onchange="window.location.href=this.value;">
+                        <option disabled selected>Location</option>
+                        <option value="Karunagappally.html">Karunagapally</option>
+                        <option value="Veluthamanal.html">Veluthamanal</option>
+                        <option value="DriverJunction.html">Driver Junction</option>
+                    </select></li>
+                    <li><a href="Login.html">Sign In</a></li>
+                    <li><a href="Logup.html">Sign Up</a></li>
+                    <li>
+                        <a href="#">Categories</a>
+                        <div class="list">
+                            <ul>
+                                <li>
+                                    <a href="mens.html">Mens</a>
+                                    <div class="list1">
+                                        <ul>
+                                            <li><a href="T-Shirt.html">T-Shirt</a></li>
+                                            <li><a href="Shirt.html">Shirt</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="kids.html">Kids</a></li>
+                                <li><a href="#">Women</a></li>
+                                <li><a href="#">T-Shirts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="Cart.html"><i class="fa fa-shopping-cart" ></i></a></li>
+                </ul>
+           </nav>
+        </div>
+        <div class="row">
+            <h2>All Products</h2>
+            <select id="myselect" onchange="price()">
+                <option>Default Sorting</option>
+                <option value="sortprice">Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by rating</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+        <div class="line" id="productlist">
+            <div class="cols-2">
+                <a href="Details.html"><img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956217/product-1_kcqe07.jpg" height="350px" width="350px" name="product1"></a>
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 500</p>
+            </div>
+            <div class="cols-2">
+                <a href="Details2.html"><img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956241/product-2_ojjjm2.jpg" height="350px" width="350px" name="product2"></a>
+                <h4>Black Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 1200</p>
+            </div>
+            <div class="cols-2">
+                <a href="Details3.html">
+                    <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956684/pink_p8jrvc.png" height="350px" width="350px" name="product3">
+                </a>
+                <h4>Pink Printed Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 500</p>
+            </div>
+            <div class="cols-2">
+                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956281/product-4_jmxzj2.jpg" height="350px" width="350px" name="product4">
+                <h4>Blue Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 700</p>
+            </div>
+        </div>
+        <div class="line">
+            <div class="cols-2">
+                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956293/product-5_v4jnut.jpg" height="350px" width="350px" name="product5">
+                <h4>Grey Coloured Shoe</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 1600</p>
+            </div>
+            <div class="cols-2">
+                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956315/product-6_cyvr60.jpg" height="350px" width="350px" name="product6">
+                <h4>Black Printed T-Shirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 1179</p>
+            </div>
+            <div class="cols-2">
+                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956332/product-7_dpdmpg.jpg" height="350px" width="350px" name="product7">
+                <h4>3 Pair of Socks</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 400</p>
+            </div>
+            <div class="cols-2">
+                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956376/product-12_kqc4zs.jpg" height="350px" width="350px" name="product12">
+                <h4>Black Printed Tracksuit</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p class="cost">&#8377 900</p>
+            </div>
+        </div>
+        <div class="page">
+            <a href="Product2.html"><span>1</span></a>
+            <a href="Product3.html"><span>2</span></a>
+            <span>3</span>
+            <span>4</span>
+            <a href="Product2.html"><span>&#8594;</span></a>
+        </div>
+        <div class="footer">
+            <div class="block">
+                <div class="footer-cols-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app">
+                        <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687957695/play-store_jiuja5.png">
+                        <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687955943/app-store_dqqr74.png">
+                    </div>
+                </div>
+                <div class="footer-cols-2">
+                    <h4>Telas<span>Track</span></h4>
+                    <p>Our Purpose Is To Sustainably Make The Plesure and<br>
+                        Benifits of Textile Accessiblity to the Many.
+                    </p>
+                </div>
+                <div class="footer-cols-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-cols-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Whatsapp</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
