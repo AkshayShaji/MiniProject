@@ -59,14 +59,16 @@
                 <div class="cols-2">
                     <h1>Red Printed T-Shirt</h1>
                     <h4>&#8377 500</h4>
-                    <select>
-                        <option disabled selected>Select Size</option>
-                        <option>XXL</option>
-                        <option>XL</option>
-                        <option>Large</option>
-                        <option>Medium</option>
-                        <option>Small</option>
-                    </select>
+                    <div class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                        <select>
+                            <option disabled selected>Select Size</option>
+                            <option>XXL</option>
+                            <option>XL</option>
+                            <option>Large</option>
+                            <option>Medium</option>
+                            <option>Small</option>
+                        </select>
+                    </div>
                     <input type="number" value="1">
                     <a class="button" href="Cart.html">Add To Cart</a>
                     <a class="button-p" href="Payment.html">Purchase</a><br><br>
