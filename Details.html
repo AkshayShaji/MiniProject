@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
         <title>Product Details - TelasTrack</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="Details.css">
@@ -16,15 +14,14 @@
             .cols-3 .fa-quote-left{
                 color: red;
             }
-        </style>                                
-        <script src="details_script.js"></script>
+        </style>
     </head>
     <body bgcolor="white">
         <div class="main">
             <nav>
                 <h4 class="logo">Telas<span>Track</span></h4>
                 <ul>
-                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="Index7.html">Home</a></li>
                     <li><a href="Login.html">Sign In</a></li>
                     <li><a href="Logup.html">Sign Up</a></li>
                     <li><a href="#">Service</a></li>
@@ -32,9 +29,9 @@
                 </ul>
            </nav>
         </div><br><br>
-        <div >
+        <div class="detail">
             <div class="line">
-                <div class="cols-2" id="mainimg">
+                <div class="cols-2" id="mainname">
                     <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956217/product-1_kcqe07.jpg" height="420px" width="420px" class="image"><br>
                     <br>
                     <div class="small-img-row">
@@ -54,34 +51,30 @@
                             </a>
                         </div>
                         <div class="small-img-col">
-                            <a href="Gallery4.html"></a>
+                            <a href="Gallery4.html">
                                 <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956173/gallery-4_oy6t0r.jpg" height="100px" width="100px">
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="cols-2" id="mainname">
-                    <div class="cols-2">
-                        <div class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-                            <select>
-                                <option disabled selected>Select Size</option>
-                                <option>XXL</option>
-                                <option>XL</option>
-                                <option>Large</option>
-                                <option>Medium</option>
-                                <option>Small</option>
-                                <input type="submit">
-                            </select>
-                        </div>
-                        <input type="number" value="1">
-                        <a class="button" href="Cart.html">Add To Cart</a>
-                        <a class="button-p" href="Payment.html">Purchase</a><br><br>
-                        <h3>Product Details <i class="fa fa-indent"></i></h3><br>
-                        <p>Give your summer wardrobe a style upgrade with the Men's Active T-Shirt. 
-                            Team it with a pair of shrts for your morning workout or a denims for an evening out with the guys.
-                        </p>
+                <div class="cols-2">
+                    <p>Home/T-Shirt</p><br>
+                    <h1>Red Printed T-Shirt</h1>
+                    <h4>&#8377 500</h4>
+                    <div class="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+                        <select required>
+                            <option disabled selected>Select Size</option>
+                            <option>XXL</option>
+                            <option>XL</option>
+                            <option>Large</option>
+                            <option>Medium</option>
+                            <option>Small</option>
+                        </select>
                     </div>
-                </div>
+                    <input type="number" value="1">
+                    <a class="button" href="Cart.html">Add To Cart</a>
+                    <a class="button-p" href="Payment.html">Purchase</a><br><br>
+                    <h3>Product Details <i class="fa fa-indent"></i></h3><br>
                     <p>Give your summer wardrobe a style upgrade with the Men's Active T-Shirt. 
                         Team it with a pair of shrts for your morning workout or a denims for an evening out with the guys.
                     </p>
@@ -102,7 +95,7 @@
                 <p>&#8377 1600</p>
             </div>
             <div class="cols-2">
-                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956315/product-6_cyvr60.jpg" height="350px" width="350px">
+                <img src="C:\Users\Asus\OneDrive\Desktop\MiniProject\product-6.jpg" height="350px" width="350px">
                 <h4>Black Printed T-Shirt</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -114,10 +107,8 @@
                 <p>&#8377 1179</p>
             </div>
             <div class="cols-2">
-                <a href="Details3.html">
-                    <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956684/pink_p8jrvc.png" height="350px" width="350px" name="product3">
-                </a>
-                <h4>Pink Printed Shirt</h4>
+                <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956315/product-6_cyvr60.jpg" height="350px" width="350px">
+                <h4>3 Pair of Socks</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -125,7 +116,7 @@
                     <i class="fa fa-star-half-o"></i>
                     <i class="fa fa-star-o"></i>
                 </div>
-                <p class="cost">&#8377 500</p>
+                <p>&#8377 400</p>
             </div>
             <div class="cols-2">
                 <img src="https://res.cloudinary.com/dvxrpsibz/image/upload/v1687956376/product-12_kqc4zs.jpg" height="350px" width="350px">
