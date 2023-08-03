@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Payment - TelasTrack</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Payment.css">
+        <script>
+            function validation()
+            {
+                var name=document.myform.fname.value;
+                var email=document.myform.mail.value;
+                var atposition=email.indexOf("@");
+                var dotposition=email.lastIndexOf(".");
+                var place=document.myform.address.value;
+                var town=document.myform.city.value;
+                var cnum=document.thisform.num.value;
+                var date=document.thisform.month.value;
+                if(name==null||name=="")
+                {
+                    alert("Name can't be blank");
+                    return false;
+                }
+                else if(atposition<1||dotposition<atposition+2||dotposition+2>=x.length)
+                {
+                    alert("please enter a valid email address");
+                    return false;
+                }
+                else if(place==null||place=="")
+                {
+                    alert("Address can't be blank");
+                    return false;
+                }
+                else if(town==null||town=="")
+                {
+                    alert("City can't be blank");
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav>
+            <h4 class="logo">Telas<span>Track</span></h4>
+       </nav>
+        <header>
+            <div class="container">
+                <div class="left">
+                    <h3>Billing Address</h3>
+                    <form name="myform" action="test.txt" method="post" onsubmit="return validation()">
+                        Full Name
+                        <input type="text" placeholder="Enter name" name="fname" value="">
+                        Email
+                        <input type="email" placeholder="Enter email" name="mail" value="">
+                        Address
+                        <input type="text" placeholder="Enter address" name="address" value="">
+                        City
+                        <input type="text" placeholder="Enter city" name="city" value="">
+                        <div class="pin">
+                            <label>
+                                State
+                                <select required>
+                                    <option disabled selected>Choose State</option>
+                                    <option>Kerala</option>
+                                    <option>Karnataka</option>
+                                    <option>Tamil Nadu</option>
+                                </select>
+                            </label>
+                            <label class="pi">
+                                Pin Code
+                                <input type="number" placeholder="Enter pin code">
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="right">
+                    <h3>Payment</h3>
+                    <form name="thisform" action="test.txt" method="post" onsubmit="return validation()">
+                        Accepted Cards<br>
+                        <img src="visa.png" width="50px">
+                        <img src="master.png" width="50px">
+                        <img src="rupay.png" width="50px"><br>
+                        Card number
+                        <input type="text" placeholder="Enter card number" name="num" value="">
+                        Exp Month
+                        <input type="text" placeholder="Enter month" name="month" value="">
+                        <div class="pin">
+                            <label>
+                                Exp Year
+                                <select required>
+                                    <option disabled selected>Choose year</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                </select>
+                            </label>
+                            <label class="pi">
+                                Cvv
+                                <input type="password" placeholder="Enter cvv">
+                            </label>
+                        </div>
+                    </form>
+                    <input type="submit" value="Proceed to Checkout">
+                </div>
+            </div>
+        </header>
+        <div class="footer">
+            <div class="block">
+                <div class="footer-cols-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app">
+                        <img src="play-store.png">
+                        <img src="app-store.png">
+                    </div>
+                </div>
+                <div class="footer-cols-2">
+                    <h4>Telas<span>Track</span></h4>
+                    <p>Our Purpose Is To Sustainably Make The Plesure and<br>
+                        Benifits of Textile Accessiblity to the Many.
+                    </p>
+                </div>
+                <div class="footer-cols-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-cols-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Whatsapp</li>
+                        <li>Linkedin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
