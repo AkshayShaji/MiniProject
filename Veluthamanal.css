@@ -1,0 +1,163 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.main{
+    margin-top: 1px;
+}
+nav{
+    justify-content: space-between;
+    display: flex;
+    padding-left: 10%;
+    padding-top: 40px;
+    padding-right: 10%;
+    align-items: center;
+    background-color: rgb(248, 195, 213);
+}
+.logo{
+    color: black;
+    font-size: 35px;
+    padding: 15px;
+    letter-spacing: 1px;
+    margin-bottom: 1px;
+}
+span{
+    color: red;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 10px 22px;
+    display: inline-block;
+    margin-bottom: 1px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    transition: .1s;
+    color: red;
+    cursor: pointer;
+}
+.city{
+    color: black;
+    border: 2px solid transparent;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: transparent;
+}
+.city:hover{
+    border: 2px solid transparent;
+    transition: .1s;
+    color: red;
+    cursor: pointer;
+    font-display: inherit;
+}
+.city option{
+    color: black;
+    padding: 5px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row h2{
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+.row select{
+    margin-right: 45px;
+    margin-top: 45px;
+    border: 2px solid transparent;
+    padding: 5px;
+}
+.row select:focus{
+    outline: none;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+.cols-2{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    box-shadow: rgb(51, 48, 48);
+    margin-left: 7px;
+    font-size: 23px;
+}
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+.page{
+    margin-left: 10px;
+}
+.page span{
+    color: black;
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page span:hover{
+    background: #ff523b;
+    color: white;
+    transition: .1s;
+}
+.footer{
+    color: #8a8a8a;
+    background-color: black;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    margin-top: 35px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+.footer h4{
+    color: #555;
+    font-size: 45px;
+    letter-spacing: 1px;
+}
+.footer-cols-1, .footer-cols-2, .footer-cols-3, .footer-cols-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-cols-1{
+    flex-basis: 30%;
+    margin-left: 180px;
+}
+.footer-cols-2{
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+.footer-cols-3, .footer-cols-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app{
+    margin-top: 20px;
+}
+.app img{
+    width: 140px;
+}
