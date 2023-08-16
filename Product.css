@@ -53,7 +53,7 @@ nav ul li a:hover{
 .city:hover{
     border: 2px solid transparent;
     transition: .1s;
-    color: white;
+    color: red;
     cursor: pointer;
     font-display: inherit;
 }
