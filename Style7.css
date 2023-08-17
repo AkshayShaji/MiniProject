@@ -108,6 +108,9 @@ nav ul li a:hover{
     justify-content: space-between;
 }
 .small h2{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Poppins', sans-serif;
     font-size: 45px;
     font-weight: bold;
     margin-left: 605px;
