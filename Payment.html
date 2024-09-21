@@ -35,6 +35,8 @@
                     alert("City can't be blank");
                     return false;
                 }
+                alert("Thank you for your purchase! Your order has been placed.");
+                return true;
             }
         </script>
     </head>
@@ -99,7 +101,7 @@
                             </label>
                         </div>
                     </form>
-                    <input type="submit" value="Proceed to Checkout">
+                    <input type="submit" value="Proceed to Checkout" onclick="return validation();">
                 </div>
             </div>
         </header>
